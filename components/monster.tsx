@@ -7,21 +7,21 @@ import {Howl, Howler} from 'howler';
 
 type MonsterProps = 
 | {
-  id: number; // ここでidプロパティを修正
+  id: number; 
   mode: 'select';
   onSelected: (id: number) => void;
   onAttack?: undefined;
   onInit: undefined;
 }
 | {
-  id: number; // ここでidプロパティを修正
+  id: number; 
   mode: 'battle';
   onAttack: () => void;
   onSelected?: undefined;
   onInit:(setHp: Dispatch<SetStateAction<number>>) => void;
 }
 | {
-    id: number; // ここでidプロパティを修正
+    id: number; 
     mode: 'none';
     onAttack: undefined;
     onSelected: undefined;
